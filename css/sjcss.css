@@ -18,11 +18,21 @@ background-image: url("../Images/casino.jpg");
  }
  .archer
  {
-     display:block;
+     display:inline-block;
     
  }
  .austin
  {
-    display:block;
+    display:inline-block;
+     
+ }
+ .harambe
+ {
+     display:inline-block;
+ }
+ 
+ .macho
+ {
+     display:inline-block;
      
  }
