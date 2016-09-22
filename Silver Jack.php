@@ -95,6 +95,49 @@ echo "<img class = 'macho' src='Images/Players/MMRS.jpg' alt = 'Player4' style =
 
 
 
+<<<<<<< HEAD
+=======
+function Combine_Cards($hearts, $diamonds, $spades, $clovers)  
+{
+
+// Creates first half of deck with diamonds and spades 
+$fsthalfdeck = array_merge($diamonds,$spades);
+
+//Creates second half of deck with hearts and clovers 
+$secndhalfdeck = array_merge ($hearts,$clovers);
+
+// Creates a full deck by combining the 2 halves
+$full_deck=array_merge($fsthalfdeck,$secndhalfdeck);
+
+// Shuffles the cards.
+$shuffled_deck = array();  //New array which will be our shuffled deck
+$keys = array_keys($full_deck); // we set keys = to array of keys of array full_deck
+shuffle($keys); //shuffle the keys
+
+foreach($keys as $key) //Loop will set our new array with keys equal to our old array's keys 
+{
+    $shuffled_deck[$key] = $full_deck[$key];
+}
+// End of shuffling the cards   *look up*
+
+
+
+foreach ($shuffled_deck as $k =>$card_value) 
+{
+    echo $k. "=>".$card_value. "<br>";
+}
+}
+
+
+
+
+
+
+
+
+
+
+>>>>>>> c374397b2d4841bdafbcf5de4282c093ec0943fe
 
 
 ?>
