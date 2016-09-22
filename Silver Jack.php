@@ -79,25 +79,18 @@ foreach ($shuffled_deck as $k =>$card_value)
 {
     echo $k. "=>".$card_value. "<br>";
 }
+
+
+}
+
+function Deal_Cards($shuffled_deck) 
+{
+    
 }
 
 
 
 
-
-
-
-
-
-
-
-
-?>
-
-
-</div>
-    </body>
-</html>
 
 
 
