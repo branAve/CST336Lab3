@@ -6,12 +6,10 @@
     </head>
     
     <body>
-<div class ="contain" </div>
+<div class ="contain">
 <h1> Silver Jack</h1>
 
 <?php
-
-
 
 Combine_Cards($hearts, $diamonds, $spades, $clovers);
 
@@ -94,10 +92,9 @@ foreach ($shuffled_deck as $k =>$card_value)
 }
 
 ?>
+</div> 
 </body>
 </html>
-
-
 
 
 
