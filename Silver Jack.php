@@ -11,76 +11,7 @@
 
 <?php
 
-/* 
-$deck = array();
-$counter = 0;
-$idNum;
-$suit;
-$value;
-$imgLoc;
 
-for($index = 0; $index < 4; $index++)
-{
-    if($index = 0)
-    {
-        $suit = "hearts";
-    }
-    elseif($index = 1)
-    {
-        $suit = "diamonds";
-    }
-    elseif($index = 2)
-    {
-        $suit = "clovers";
-    }
-    else
-    {
-        $suit = "spades";
-    }
-    
-    
-    for($index2 = 0; $index2 < 13; $index++)
-    {
-        $idNum = $counter;
-        $value = $index2;
-        $imgLoc = "/Images/".$suit."/".$value.".png";
-        
-        $deck[] = array("id"=>$idNum, "suit"=>$suit, "value"=>$value, "imgLoc"=>$imgLoc);
-        
-        $counter++;
-    }
-    
-}
-
-while( $element = each( $deck ) )
-{
- echo $element[ 'id' ];
- echo ' - ';
- echo $element[ 'suit' ];
- echo ' - ';
- echo $element[ 'value'];
- echo '  : imgLoc = ';
- echo $element[ 'imgLoc'];
- echo '<br />';
-}
-
-
-$playerOneNumCards = rand(4,6);
-$playerTwoNumCards = rand(4,6);
-$playerThreeNumCards = rand(4,6);
-$playerFourNumCards = rand(4,6);
-
-$playerOneCards = array();
-$playerTwoCards = array();
-$playerThreeCards = array();
-$playerFourCards = array();
-
-function dealCards()
-{
-    
-}
-
-*/
 
 Combine_Cards($hearts, $diamonds, $spades, $clovers);
 
@@ -114,7 +45,7 @@ function Shuffle_Players($player_pics)
 }
 
 
-/* 
+
 echo "<img class = 'archer' src='Images/Players/Archer.png' alt = 'Player1' style = 'width: 76px;height:96px;'></img>";
 
 echo "<br>";
@@ -127,10 +58,7 @@ echo "<br>";
 
 echo "<img class = 'macho' src='Images/Players/MMRS.jpg' alt = 'Player4' style = 'width: 76px;height:96px;'></img>";
 
-*/
 
-//<<<<<<< HEAD
-//=======
 
 function Combine_Cards($hearts, $diamonds, $spades, $clovers)  
 {
@@ -168,8 +96,6 @@ foreach ($shuffled_deck as $k =>$card_value)
 ?>
 </body>
 </html>
-
->>>>>>> e3b694f8c37b7a1d65f545f96fff4562ca2907cc
 
 
 
