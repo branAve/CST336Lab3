@@ -169,7 +169,7 @@ foreach ($shuffled_deck as $k =>$card_value)
 </body>
 </html>
 
-<!--/* */>>>>>>> e3b694f8c37b7a1d65f545f96fff4562ca2907cc-->
+>>>>>>> e3b694f8c37b7a1d65f545f96fff4562ca2907cc
 
 
 
