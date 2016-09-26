@@ -6,12 +6,11 @@
     </head>
     
     <body>
-<div class ="contain"</div>
+
+<div class ="contain">
 <h1> Silver Jack</h1>
 
 <?php
-
-
 
 Combine_Cards($hearts, $diamonds, $spades, $clovers);
 
@@ -96,10 +95,9 @@ Shuffle_Players();
 }
 
 ?>
+</div> 
 </body>
 </html>
-
-
 
 
 
