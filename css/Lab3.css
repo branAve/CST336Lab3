@@ -33,6 +33,7 @@ background-image: url("../Images/casino.jpg");
      margin-left: auto;
      margin-top: 10px;
      border: inset;
+
      
  }
  
@@ -51,13 +52,19 @@ background-image: url("../Images/casino.jpg");
      height: 96px;
      border: solid;
      float: right;
-     font-size: x-large;
+     font-size:100px; 
  }
  
  .winnerCard
  {
      border: solid;
-     border-color: !important;
-     font-size: large;
-     font-style: !important;
+     color: gold;
+     font-size: 75px;
+ 
+ }
+ .P1
+ { 
+     display:inline;
+     width:150px;
+     font-size:50px;
  }

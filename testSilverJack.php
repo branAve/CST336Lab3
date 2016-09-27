@@ -184,13 +184,25 @@ function value($card)
 
 ?>
 
-//player 1 
+<font size = "12" , color = "silver">Player 1</font>
+
 <div class = "playerLayout">
     <?php
     
-    echo "<img class = 'player' src='" . $player_pics["$players[0]"] . "' alt = 'player 1'></img> Player1:  " . $players[0];
+    echo "<img class = 'player' src='" . $player_pics["$players[0]"] . "' alt = 'player 1'></img> " ;
+    ?>
     
+    <div class = "P1" > 
+     <?php
+    echo $players[0];
+      ?>
+    </div>
     
+     <?php
+
+
+
+
     for($i = 0; $i < count($player1hand); $i++)
     {   
         echo "<img class = 'card' src='Images/" . suit($player1hand[$i]) . "/" . value($player1hand[$i]) . ".png' alt = 'card'></img>;";
@@ -201,17 +213,34 @@ function value($card)
     
     <div class = "score" align = center>
         <?php
-        echo "<font size = 4>" . $scores[0] . "</font>";
+
+        echo  $scores[0];
+
+       
         ?>
     </div>
 </div>
 
 
 
-//player 2
+<font size = "12" , color = "silver">Player 2</font>
 <div class = "playerLayout">
     <?php
-     echo "<img class = 'player' src='" . $player_pics["$players[1]"] . "' alt = 'player 2'></img> Player2:  " . $players[1];
+     echo "<img class = 'player' src='" . $player_pics["$players[1]"] . "' alt = 'player 2'></img> ";
+     
+      ?>
+    
+    <div class = "P1" > 
+     <?php
+    echo $players[1];
+      ?>
+    </div>
+    
+     
+     
+     <?php
+     
+
     for($i = 0; $i < count($player2hand); $i++)
     {
         
@@ -220,19 +249,33 @@ function value($card)
    
     ?>
     
+
+    
+    
     <div class = "score" align = center>
         <?php
-        echo "<font size = 4>" . $scores[1] . "</font>";
-        ?>
-    </div>
-    
+        echo  $scores[1] ;
+?>
+   
 </div>
 
 
-//player 3
+<font size = "12" , color = "silver">Player 3</font>
 <div class = "playerLayout">
     <?php
-     echo "<img class = 'player' src='" . $player_pics["$players[2]"] . "' alt = 'player 3'></img> Player3:  " . $players[2];
+     echo "<img class = 'player' src='" . $player_pics["$players[2]"] . "' alt = 'player 3'></img>  ";
+      ?>
+    
+    <div class = "P1" > 
+     <?php
+    echo $players[2];
+      ?>
+    </div>
+    
+     
+     
+     <?php
+
      for($i = 0; $i < count($player3hand); $i++)
     {
         
@@ -243,17 +286,32 @@ function value($card)
     
     <div class = "score" align = center>
         <?php
-        echo "<font size = 4>" . $scores[2] . "</font>";
+
+      //  echo "<font size = 4>" . $scores[2] . "</font>";
+         echo  $scores[2]  ;
+
+
         ?>
     </div>
     
 </div>
 
 
-//player 4
+
+<font size = "12" , color = "silver">Player 4</font>
 <div class = "playerLayout">
     <?php
-     echo "<img class = 'player' src='" . $player_pics["$players[3]"] . "' alt = 'player 4'></img> Player4:  " . $players[3];
+     echo "<img class = 'player' src='" . $player_pics["$players[3]"] . "' alt = 'player 4'></img>";
+      ?>
+    
+    <div class = "P1" > 
+     <?php
+    echo $players[3];
+      ?>
+    </div>
+    
+     <?php
+
      for($i = 0; $i < count($player4hand); $i++)
     {
         
@@ -264,7 +322,9 @@ function value($card)
     
      <div class = "score" align = center>
         <?php
-        echo "<font size = 4>" . $scores[3] . "</font>";
+
+        echo $scores[3] ;
+
         ?>
     </div>
     
@@ -275,7 +335,9 @@ function value($card)
 
 <div class = winnerCard align = center>
     <?php
-    echo "<font>Winner is player # " . ($winner + 1) . "</font>";
+
+    echo "Winner is " .$players[$winner];    //player # " . ($winner + 1);
+
     ?>
 </div>
 
