@@ -6,6 +6,7 @@
     </head>
     
     <body>
+
 <div class ="contain">
 <h1> Silver Jack</h1>
 
@@ -42,16 +43,16 @@ function Shuffle_Players($player_pics)
     
     for ($i=0; $i<4; $i++)
     {
-       if  ($player_pics[0] == "Macho")
+       if  ($player_pics[$i] == "Macho")
        {
            echo "<img class = 'macho' src='Images/Players/MMRS.jpg' alt = 'Player4' style = 'width: 76px;height:96px;'></img>";
        }
-       else if ($player_pics[0] == "Harambe")
+       else if ($player_pics[$i] == "Harambe")
        {
            echo "<img class = 'harambe' src='Images/Players/Harambe.jpg' alt = 'Player3' style = 'width: 76px;height:96px;'></img>";
        }
        
-       else if ($player_pics[0] == "Archer")
+       else if ($player_pics[$i] == "Archer")
        {
            echo "<img class = 'archer' src='Images/Players/Archer.png' alt = 'Player1' style = 'width: 76px;height:96px;'></img>";
        }
@@ -64,7 +65,7 @@ function Shuffle_Players($player_pics)
 }
 
 
-
+/*
 echo "<img class = 'archer' src='Images/Players/Archer.png' alt = 'Player1' style = 'width: 76px;height:96px;'></img>";
 
 echo "<br>";
@@ -76,7 +77,7 @@ echo "<img class = 'harambe' src='Images/Players/Harambe.jpg' alt = 'Player3' st
 echo "<br>";
 
 echo "<img class = 'macho' src='Images/Players/MMRS.jpg' alt = 'Player4' style = 'width: 76px;height:96px;'></img>";
-
+*/
 
 
 function Combine_Cards($hearts, $diamonds, $spades, $clovers)  
@@ -108,6 +109,8 @@ foreach ($shuffled_deck as $k =>$card_value)
 {
     echo $k. "=>".$card_value. "<br>";
 }
+
+Shuffle_Players();
 
 
 }

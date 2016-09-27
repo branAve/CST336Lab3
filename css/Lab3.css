@@ -16,23 +16,55 @@ background-image: url("../Images/casino.jpg");
   border-color: red;
   background-color: green;
  }
- .archer
+ 
+ 
+ .player
  {
-     display:inline-block;
+     display:inline;
+     width: 72px;
+     height: 96px;
     
  }
- .austin
+ 
+ .playerLayout
  {
-    display:inline-block;
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+     margin-top: 10px;
+     border: inset;
      
- }
- .harambe
- {
-     display:inline-block;
+     
  }
  
- .macho
+ .card
  {
-     display:inline-block;
+     display: inline-block;
+     width: 72px;
+     height: 96px;
      
+ }
+ 
+ .score
+ {
+     display: inline;
+     width:  140px;
+     height: 96px;
+     border: solid;
+     float: right;
+     font-size:100px; 
+ }
+ 
+ .winnerCard
+ {
+     border: solid;
+     color: gold;
+     font-size: 75px;
+   
+ }
+ .P1
+ { 
+     display:inline;
+     width:150px;
+     font-size:50px;
  }
