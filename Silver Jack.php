@@ -11,6 +11,27 @@
 
 <?php
 
+$card_suits = array ("clovers", "diamonds", "hearts","spades");
+$card_face =array ("A" =>1, "two" =>2, "three"=>3, "four" =>4, "five" =>5, "six" => 6, "seven" =>7, "eight"=>8, "nine"=>9,"ten"=>10, "J"=>11, "Q" =>12, "K"=>13);
+$card_deck = array();
+
+
+function make_the_deck($card_suits, $card_face, $card_deck)
+{
+    foreach($card_suits as $suits)
+    {
+        foreach ($card_face as $face => $value) 
+        {
+        $card_deck[] = array ("face"=>$card_face, "suits"=>$card_suit, "value"=>$card_value);
+        }
+    }
+    
+}
+make_the_deck($card_suits, $card_face, $card_deck);
+shuffle($card_deck);
+echo "<img src='Images/Cards/" . $card_deck[1]["suits"] . "/" . $card_deck[1]["value"] . ".png' >". "</img>";
+
+/*
 Combine_Cards($hearts, $diamonds, $spades, $clovers);
 
 $player_pics = array ("Macho", "Harambe", "Archer", "Austin");
@@ -90,8 +111,11 @@ foreach ($shuffled_deck as $k =>$card_value)
 
 
 }
-
+*/
 ?>
+
+
+
 </div> 
 </body>
 </html>
