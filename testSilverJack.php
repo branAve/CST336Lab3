@@ -275,7 +275,7 @@ function value($card)
 
 <div class = winnerCard align = center>
     <?php
-    echo "Winner is player # " . ($winner + 1);
+    echo "<font>Winner is player # " . ($winner + 1) . "</font>";
     ?>
 </div>
 
